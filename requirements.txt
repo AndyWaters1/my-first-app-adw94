@@ -7,3 +7,5 @@ plotly
 
 #ImportError: Plotly express requires pandas
 pandas
+
+python-dotenv

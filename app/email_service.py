@@ -1,21 +1,4 @@
-#DUMMY EMAIL FUNCTION
-
-SENDGRID_API_KEY = "todo"
-SENDER_ADDRESS = "example@gmail.com"
-
-
-def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Testing 123", html_content="<p>Hello World</p>"):
-    print("SENDING EMAIL TO:", recipient_address)
-    print("SUBJECT:", subject)
-    print("HTML:", html_content)
-    print("TODO...")
-
-
-send_email()
-
-quit()
-
-#ACTUAL EMAIL FUNCTION
+#EMAIL FUNCTION
 
 import os
 
@@ -58,7 +41,7 @@ def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Te
 
 
 
-
+user_address = input("Please enter your email address: ")
 
 
 my_content = """
@@ -79,4 +62,4 @@ my_content = """
         <li>Strawberry</li>
     </ul>
 """
-send_email(html_content=my_content)
+send_email(html_content=my_content, recipient_address=user_address)
